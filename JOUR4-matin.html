@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jour 1 - Matin - Carnet de Bord</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>	
+</head>
+<body>
+    <header>
+        <h1>Le carnet de bord de mon stage d'observation.</h1>
+		<img src="LOGO ACCSI UNIS.png" style="width:20%; height:20%; float:right; margin-right:10px;"/>
+    </header>
+    <nav>
+        <a href="CARNET-DE-BORD.html">Accueil</a>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;">Lundi 20 janvier</td></tr>
+		<tr>
+			<td><a href="JOUR1-matin.html">matin</a></td>
+			<td><a href="JOUR1-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;">Mardi 21 janvier</td></tr>
+		<tr>
+			<td><a href="JOUR2-matin.html">matin</a></td>
+			<td><a href="JOUR2-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;">Mercredi 22 janvier</td></tr>
+		<tr>
+			<td><a href="JOUR3-matin.html">matin</a></td>
+			<td><a href="JOUR3-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td class="texte-rouge" colspan=2 style="text-align:center;">Jeudi 23 janvier</td></tr>
+		<tr>
+			<td><a class="texte-rouge" href="JOUR4-matin.html">matin</a></td>
+			<td><a href="JOUR4-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+		<table style="display:inline;"><thead></thead><tbody>
+		<tr><td colspan=2 style="text-align:center;">Vendredi 24 janvier</td></tr>
+		<tr>
+			<td><a href="JOUR5-matin.html">matin</a></td>
+			<td><a href="JOUR5-apres-midi.html">après-midi</a></td>
+		</tr>
+		</tbody></table>
+    </nav>
+    <div class="day-entry" id="mon_carnet">
+        <h2>Jour 4 - Matin</h2>
+        <img src="LOGO ACCSI UNIS.png" alt="Image du jour 4" style="width:20%; height:20%;">
+        <p>Cher journal, ce matin-là j'ai rencontré...</p>
+    </div>
+	<div>
+		<button onclick="generatePDF()" style="right:5px; bottom: 5px; position:absolute;">Télécharger le PDF</button>
+		<script>
+			function generatePDF() {
+			  const element = document.getElementById('mon_carnet');
+			  html2pdf().from(element).save();
+			}
+		</script>
+    </div>
+</body>
+</html>
