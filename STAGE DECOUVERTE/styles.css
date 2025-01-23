@@ -1,0 +1,40 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f8ff;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #4682b4;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+nav {
+	background-color: #4682b4;
+	padding: 10px;
+}
+nav a {
+	color: white;
+	margin: 0 10px;
+	text-decoration: none;
+}
+.day-entry {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.day-entry h2 {
+	color: #4682b4;
+}
+.day-entry img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.texte-rouge {
+	color : red;
+}
